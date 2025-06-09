@@ -1,0 +1,155 @@
+opened tty port </dev/cu.usbserial-10>.
+pi-install: tty-usb=</dev/cu.usbserial-10> program=<./notmain.bin> about to boot
+TRACE:simple_boot: sending 36272 bytes, crc32=7284f334
+waiting for a start
+putting code
+bootloader: Done.
+listening on ttyusb=</dev/cu.usbserial-10>
+redzone checking: init
+[criu.c] Stack is [0x7ffffe0, 0x8000000]
+[criu.c] 0x7ffffe0 : 0x400
+[criu.c] 0x7ffffe4 : 0xe02c
+[criu.c] 0x7ffffe8 : 0xd6278b8f
+[criu.c] 0x7ffffec : 0x56248638
+[criu.c] 0x7fffff0 : 0xb9f09c52
+[criu.c] 0x7fffff4 : 0x8db0
+[criu.c] 0x7fffff8 : 0x10daf
+[criu.c] 0x7fffffc : 0x8038
+8192, 15720448
+boot sector:
+	oem               = <BSD  4.4>
+	bytes_per_sec     = 512
+	sec_per_cluster   = 64
+	reserved size     = 32
+	nfats             = 2
+	max_files         = 0
+	fs n sectors      = 0
+	media type        = 0xf8
+	sec per track     = 32
+	n heads           = 255
+	n hidden secs     = 8192
+	n nsec in FS      = 15720448
+	n nsec per fat    = 1919
+	n mirror flags    = 0
+	n version         = 0
+	n first_cluster   = 2
+	n info_sec_num    = 1
+	n back_boot_loc   = 6
+	n logical_drive_num= 128
+	n extended sig    = 0x29
+	n serial_num      = 0x27191b21
+	n volume label    = <NONAME     >
+	n fs_type         = <FAT32   >
+	n sig             = 0xaa55
+fsinfo sector:
+	sig1              = 0x41615252
+	sig2              = 0x61417272
+	sig3              = 0xaa550000
+	free cluster cnt  = 245204
+	next free cluster = 0x1b1
+TRACE:fat32_mk:begin lba = 8224
+TRACE:fat32_mk:cluster begin lba = 12062
+TRACE:fat32_mk:sectors per cluster = 64
+TRACE:fat32_mk:root dir first cluster = 2
+TRACE:fat32_delete:deleting STACK.TXT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:fat32_create:creating STACK.TXT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:fat32_write:empty file, updating directory cluster number
+TRACE:fat32_write:writing file
+TRACE:cluster_to_lba:cluster 6 to lba: 12318
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:fat32_write:writing dirent
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+[criu.c] Written STACK state
+TRACE:fat32_delete:deleting CODE.TXT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:fat32_create:creating CODE.TXT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:fat32_write:empty file, updating directory cluster number
+TRACE:fat32_write:writing file
+TRACE:cluster_to_lba:cluster 36 to lba: 14238
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:fat32_write:writing dirent
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+[criu.c] Written CODE state
+TRACE:fat32_delete:deleting METADATA.TXT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:fat32_create:creating METADATA.TXT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:fat32_write:empty file, updating directory cluster number
+TRACE:fat32_write:writing file
+TRACE:cluster_to_lba:cluster 7 to lba: 12382
+TRACE:write_fat_to_disk:syncing FAT
+TRACE:fat32_write:writing dirent
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:write_fat_to_disk:syncing FAT
+[criu.c] Written METADATA
+[criu.c] Printing Metadata
+----------------------------------------
+lr: 0x8058
+sp: 0x7ffffe0
+stack top: 0x8000000
+code_state: 0x8000
+code_end: 0xe500
+----------------------------------------
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:cluster_to_lba:cluster 7 to lba: 12382
+[criu.c] Read 20 bytes from METADATA
+[criu.c] Printing Metadata
+----------------------------------------
+lr: 0x8058
+sp: 0x7ffffe0
+stack top: 0x8000000
+code_state: 0x8000
+code_end: 0xe500
+----------------------------------------
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:cluster_to_lba:cluster 6 to lba: 12318
+[criu.c] Read 32 bytes
+[criu.c] STACK_OUT[0] = 0x400
+[criu.c] STACK_OUT[1] = 0xe02c
+[criu.c] STACK_OUT[2] = 0xd6278b8f
+[criu.c] STACK_OUT[3] = 0x56248638
+[criu.c] STACK_OUT[4] = 0xb9f09c52
+[criu.c] STACK_OUT[5] = 0x8db0
+[criu.c] STACK_OUT[6] = 0x10daf
+[criu.c] STACK_OUT[7] = 0x8038
+[criu.c] Stack is [0x7ffffe0, 0x8000000]
+[criu.c] 0x7ffffe0 : 0x400
+[criu.c] 0x7ffffe4 : 0xe02c
+[criu.c] 0x7ffffe8 : 0xd6278b8f
+[criu.c] 0x7ffffec : 0x56248638
+[criu.c] 0x7fffff0 : 0xb9f09c52
+[criu.c] 0x7fffff4 : 0x8db0
+[criu.c] 0x7fffff8 : 0x10daf
+[criu.c] 0x7fffffc : 0x8038
+TRACE:cluster_to_lba:cluster 2 to lba: 12062
+TRACE:cluster_to_lba:cluster 36 to lba: 14238
+[criu.c] Read 25856 bytes
+[criu.c] Code is [0x8000, 0xe500]
+DONE!!!
+
+Saw done
+
+bootloader: pi exited.  cleaning up
